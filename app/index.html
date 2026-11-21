@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Platinum Ledger — GTA 6 Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1>LEONIDA PLATINUM LEDGER</h1>
+    <p class="sub">GTA VI &middot; PS5 &middot; all 55 trophies &middot; guide + tracker &middot; works fully offline</p>
+  </div>
+  <div class="progress" id="progressBox">
+    <div class="big" id="earnedLine">0 / 55 earned</div>
+    <div class="pts" id="pointsLine">0 / 1,350 PSN points</div>
+    <div class="bar"><div id="barFill"></div></div>
+  </div>
+</header>
+<section class="audit" id="auditStrip" aria-label="Audit strip"></section>
+<nav class="tabs" id="tabs">
+  <button type="button" data-tab="tracker" class="on">Tracker</button>
+  <button type="button" data-tab="roadmap">Roadmap</button>
+  <button type="button" data-tab="missables">Missables &amp; Disputes</button>
+  <button type="button" data-tab="sources">Sources</button>
+  <button type="button" data-tab="ledger">100% Ledger</button>
+</nav>
+<main>
+  <section id="tab-tracker" class="tabpage on">
+    <div class="controls">
+      <input id="search" type="search" placeholder="Search trophy or mission…" aria-label="Search trophies">
+      <label>Grade <select id="grade"><option value="all">All</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
+      <label>Kind <select id="kind"><option value="all">All kinds</option><option value="story">Story</option><option value="missable">Missable</option><option value="collectibles">Collectibles</option><option value="activities">Activities</option><option value="online">Online</option></select></label>
+      <label class="check"><input type="checkbox" id="hiddenOnly"> PSN-hidden only</label>
+      <label class="check"><input type="checkbox" id="disputedOnly"> Disputed only</label>
+      <label class="check"><input type="checkbox" id="notEarned"> Not earned only</label>
+      <label class="check spoiler"><input type="checkbox" id="spoiler"> Spoiler shield: hide story names until earned</label>
+      <button id="export" type="button">Export progress</button>
+      <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
+    </div>
+    <div class="chips" id="filterChips"></div>
+    <div class="panes">
+      <div class="list" id="list" role="list"></div>
+      <aside class="detail" id="detail" aria-live="polite"></aside>
+      <aside class="rail" id="rail"></aside>
+    </div>
+  </section>
+  <section id="tab-roadmap" class="tabpage"><div id="roadmapPage"></div></section>
+  <section id="tab-missables" class="tabpage"><div id="missablesPage"></div></section>
+  <section id="tab-sources" class="tabpage"><div id="sourcesPage"></div></section>
+  <section id="tab-ledger" class="tabpage"><div id="ledgerPage"></div></section>
+</main>
+<footer><p>Official names &amp; descriptions as PlayStation publishes them. Guides are written in our own words; every fact cites a numbered source. No Rockstar logo or artwork. Saved in this browser (localStorage) — nothing leaves your device.</p></footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
